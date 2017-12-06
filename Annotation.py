@@ -44,7 +44,7 @@ def Annotation1(Gff,TIDList,output,Folder):
 #                "DupGene_%s"%(i), "/Users/weijiasu/Dropbox/Research/BioinformaticsProject/Maize_B73/1009/"
 #                )
 
-
+# Split GFF file to get annotation for each chromosome separately.
 def SplitGff(Folder,Gff,Length,OutputName):
     os.chdir(Folder)
     ID=' '
@@ -123,4 +123,6 @@ def ClearBlastResult(BlastOut, Output,Folder):
     BlastFile.close()
     Outfile.close()
 
-ClearBlastResult("AllTEblastGenome","AllTEout","/Users/weijiasu/Dropbox/Research/BioinformaticsProject/Maize_B73/")
+# ClearBlastResult("AllTEblastGenome","AllTEout","/Users/weijiasu/Dropbox/Research/BioinformaticsProject/Maize_B73/")
+
+
